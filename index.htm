@@ -1,0 +1,485 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0037)file:///D:/UeFan_webpage/imbvdb1s.htm -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta content="IE=5.0000" http-equiv="X-UA-Compatible">
+
+<link class="library" id="jqueryui_191" href="./index_files/jquery-ui-1.9.1.custom.min.css" rel="stylesheet" type="text/css">
+<script class="library" id="jquery_182" src="./index_files/jquery-1.8.2.min.js.下载" type="text/javascript"></script>
+
+<script class="library" id="jqueryui_191" src="./index_files/jquery-ui-1.9.1.custom.min.js.下载" type="text/javascript"></script>
+
+<script type="text/javascript"></script>
+
+<meta name="GENERATOR" content="MSHTML 11.00.9600.18978"></head>
+<body class=" meny-left meny-left" style="perspective: 800px; -webkit-perspective-origin-x: 0px; -webkit-perspective-origin-y: 50%; perspective-origin: 0px 50%;">
+
+<div class="meny" style="width: 320px; height: 100%; display: block; position: fixed; z-index: 1; -webkit-transform-origin: 100% 50%; -webkit-transition: all 0.5s ease; -webkit-transform: translateX(-100%) translateX(6px) scale(1.01) rotateY(-30deg);">
+<div class="title">				OIER老黄历<sup>Ver 0.1  Build 0001</sup>			 </div>
+<h2>关于</h2>
+<div class="comment">
+<ul>
+  <li>本老黄历尚处于测试版本，作者随时会修改，所以如果上午看到的内容跟下午不同，请勿惊慌；</li>
+  <li>本老黄历的产生要感谢其原作者；</li>
+  <li>改进中……</li></ul></div></div>
+<div class="meny-arrow"></div>
+<div class="contents" style="-webkit-transform-origin: 0px 50%; -webkit-transition: all 0.5s ease;">
+<div id="inHtml">
+<div class="container">
+<div class="date">2018年4月15日 星期日</div>
+<div class="good">
+<div class="title">宜</div>
+<div class="content">
+<ul><li><div class="name">刷题</div><div class="description">今天AC率很高</div></li><li><div class="name">一个没去过的地方</div><div class="description">收获大量节操</div></li></ul></div>
+<div class="clear"></div></div>
+<div class="split"></div>
+<div class="bad">
+<div class="title">忌</div>
+<div class="content">
+<ul><li><div class="name">翘课</div><div class="description">鉴于当前的形势，你会碰到班主任</div></li><li><div class="name">找同学</div><div class="description">你只会找到一两个二货</div></li></ul></div>
+<div class="clear"></div></div>
+<div class="split"></div>
+<div class="direction"><strong>做题指导：</strong>面向<span class="direction_value">东方</span>在<span class="ojs_value">POJ</span>做<span class="prob_value">最短路</span>类型的题，有助于提升水平且易于AC。
+			 </div></div></div><div style="position: absolute; display: block; width: 100%; height: 100%; left: 0px; top: 0px; z-index: 1000; visibility: hidden; opacity: 0; background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.65) 100%); transition: all 0.5s ease;"></div></div>
+<script src="./index_files/meny.min.js.下载"></script>
+
+<style>* {
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body {
+	height: 100%;
+	overflow: hidden;
+}
+
+body {
+	background-color: #222;
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAGklEQVQIW2NkYGD4D8SMQAwGcAY2AbBKDBUAVuYCBQPd34sAAAAASUVORK5CYII=);
+	background-repeat: repeat;
+
+	font-family: 'Lato', Helvetica, sans-serif;
+	font-size: 16px;
+	color: #222;
+}
+
+button {
+	margin: 2;
+	padding: 2;
+	width: 100;
+	font-family: '微软雅黑', bold;
+	font-size: 14px;
+}
+
+a {
+	color: #c2575b;
+	text-decoration: none;
+
+	-webkit-transition: 0.15s color ease;
+	   -moz-transition: 0.15s color ease;
+	    -ms-transition: 0.15s color ease;
+	     -o-transition: 0.15s color ease;
+	        transition: 0.15s color ease;
+}
+	a:hover {
+		color: #f76f76;
+	}
+
+h1,
+h2 {
+	font-size: 24px;
+}
+
+.meny {
+	display: none;
+	padding: 20px;
+	overflow: auto;
+	background: #333;
+	color: #eee;
+
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+	.meny ul {
+		margin-top: 10px;
+	}
+		.meny ul li {
+			display: inline-block;
+			width: 200px;
+			list-style: none;
+			padding: 3px 5px;
+		}
+			.meny ul li:before {
+				content: '-';
+				margin-right: 5px;
+				color: rgba( 255, 255, 255, 0.2 );
+			}
+
+/**
+ * Hint graphic that appears while menu is inactive
+ */
+.meny-arrow {
+	position: absolute;
+	z-index: 10;
+
+	border: 10px solid transparent;
+
+	-webkit-transition: opacity 0.4s ease 0.4s;
+	   -moz-transition: opacity 0.4s ease 0.4s;
+	    -ms-transition: opacity 0.4s ease 0.4s;
+	     -o-transition: opacity 0.4s ease 0.4s;
+	        transition: opacity 0.4s ease 0.4s;
+}
+	.meny-left .meny-arrow {
+		left: 14px;
+		top: 50%;
+		margin-top: -16px;
+		border-left: 16px solid #333;
+	}
+	.meny-right .meny-arrow {
+		right: 14px;
+		top: 50%;
+		margin-top: -16px;
+		border-right: 16px solid #333;
+	}
+	.meny-top .meny-arrow {
+		left: 50%;
+		top: 14px;
+		margin-left: -16px;
+		border-top: 16px solid #333;
+	}
+	.meny-bottom .meny-arrow {
+		left: 50%;
+		bottom: 14px;
+		margin-left: -16px;
+		border-bottom: 16px solid #333;
+	}
+	.meny-active .meny-arrow {
+		opacity: 0;
+
+		-webkit-transition: opacity 0.2s ease;
+		   -moz-transition: opacity 0.2s ease;
+		    -ms-transition: opacity 0.2s ease;
+		     -o-transition: opacity 0.2s ease;
+		        transition: opacity 0.2s ease;
+	}
+
+/**
+ * Main contents area
+ */
+.contents {
+	background: #eee;
+	padding: 20px 40px;
+	width: 100%;
+	height: 100%;
+	overflow-y: auto;
+
+	-webkit-overflow-scrolling: touch;
+
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+	.contents>article {
+		max-width: 400px;
+	}
+	.contents p {
+		margin: 10px 0 10px 0;
+		font-size: 16px;
+		line-height: 1.32;
+	}
+	.contents small {
+		display: block;
+		margin-top: 10px;
+		padding-top: 10px;
+		color: #333;
+		font-size: 0.85em;
+		border-top: 1px dashed #ccc;
+
+		-webkit-text-size-adjust: none;
+	}
+	.contents .sharing {
+		position: absolute;
+		bottom: 20px;
+	}
+.seldate {
+	width:300px;
+	font-size:18px;
+}
+body * {
+
+	font-family:"Consolas","Microsoft Yahei", Arial, sans-serif;
+}
+
+body {
+
+	margin-top: 0;
+	padding-top :0;
+}
+
+.container {
+	width: 85%;
+	margin: 0 auto 50px;
+}
+
+.container>.title {
+	color: #bbb;
+	font-weight: bold;
+	margin-bottom: 10px;
+	background: #555;
+	padding: 5px 15px;
+}
+
+.date{
+	font-size:18pt;
+	font-weight: bold;
+	line-height: 15pt;
+	text-align: center;
+}
+
+.split, .clear {
+	clear: both;
+	height: 1px;
+	overflow-y: hidden;
+}
+
+.good, .bad {
+	clear: both;
+	margin-top: 10px;
+}
+
+.good .title, .bad .title {
+	float: left;
+	width: 80px;
+	font-weight: bold;
+	height:140px;
+	text-align: center;
+	font-size: 30pt;
+	padding-top: 100px;
+}
+
+.good .title {
+	background: yellow;
+}
+
+.bad .title {
+	background: red;
+	color: #fff;
+}
+
+.good .content, .bad .content {
+	margin-left: 100px;
+	padding-top: 10px;
+	font-size:15pt;
+}
+
+.good {
+	background: #f4ffaa;
+}
+
+.bad {
+	background: #ffddd3;
+}
+
+.content ul {
+	list-style: none;
+	margin:10px 0 0;
+	padding:0;
+}
+
+.content ul li {
+	line-height:150%;
+	font-size: 15pt;
+	font-weight: bold;
+	color: #444;
+}
+
+.content ul li div.description {
+	font-size: 10pt;
+	font-weight: normal;
+	margin-left: 15px;
+	color: #777;
+	line-height: 110%;
+	margin-bottom: 10px;
+}
+
+.direction {
+	font-size: 11pt;
+	margin-top: 10px;
+}
+
+.direction_value {
+	color:#4a4;
+	font-weight: bold;
+}
+.ojs {
+	font-size: 11pt;
+	margin-top: 10px;
+}
+
+.ojs_value {
+	color:#4a4;
+	font-weight: bold;
+}
+
+.prob {
+	font-size: 11pt;
+	margin-top: 10px;
+}
+
+.prob_value {
+	color:#4a4;
+	font-weight: bold;
+}
+
+.comment {
+	margin-top: 50px;
+	font-size: 11pt;
+}
+
+.comment ul {
+	margin-left: ;
+	padding-left: 0px;
+	color: #666;
+	font-size: 12px;
+}
+	    	</style>
+
+<script>	function random(dayseed, indexseed) {
+	var n = dayseed % 11117;
+	var r;
+	for (var i = 0; i < 100 + indexseed; i++) {
+		n = n * n + 11117;
+		n = n % 11117;   // 11117 是个质数
+	}
+	return n;
+}
+function strToDate(str)
+{
+  var val=Date.parse(str);
+  var newDate=new Date(val);
+  return newDate;
+}
+var today = new Date();
+var iday = today.getFullYear() * 10000 + (today.getMonth() + 1) * 100 + today.getDate();
+
+var weeks = ["日","一","二","三","四","五","六"];
+var directions = ["北方","东北方","东方","东南方","南方","西南方","西方","西北方"];
+var ojs = ["VIJOS","POJ","ZOJ","UvaOJ","USACO"];
+var food = ["VIJOS","POJ","ZOJ","UvaOJ","USACO"];
+var prob = ["模拟","动态规划","字符串处理","搜索","数论","计算几何","图结构","树结构","匹配","并查集","贪心","最短路","博弈论","高级数据结构","网络流"];
+var activities = [
+	{name:"刷题", good:"今天AC率很高",bad:"OJ会因为你爆服务器"},
+	{name:"一个没去过的地方", good:"收获大量节操",bad:"节操会掉光"},
+	{name:"翘课", good:"该放手时就放手",bad:"鉴于当前的形势，你会碰到班主任"},
+	{name:"找同学", good:"多多交流",bad:"你只会找到一两个二货"},
+];
+
+var tools = ["Eclipse写程序", "汇编写代码", "记事本写程序", "Windows8", "Linux", "MacOS", "IE", "Android设备", "iOS设备"];
+
+var varNames = ["searchResult", "huodong", "pay", "expire", "zhangdan", "everyone", "free", "i1", "a", "virtual", "honorificabilitudinitatibus", "spider", "mima"];
+
+function getTodayString() {
+	return  today.getFullYear() + "年" + (today.getMonth() + 1) + "月" + today.getDate() + "日 星期" + weeks[today.getDay()];
+}
+
+// 生成今日运势
+function pickTodaysLuck() {
+	var numGood = random(iday, 98) % 3 + 2;
+	var numBad = random(iday, 97) % 3 + 2;
+	var eventArr = pickRandom(numGood + numBad);
+
+	for (var i = 0; i < numGood; i++) {
+		addToGood(eventArr[i]);
+	}
+
+	for (var i = 0; i < numBad; i++) {
+		addToBad(eventArr[numGood + i]);
+	}
+}
+
+// 从 activities 中随机挑选 size 个
+function pickRandom(size) {
+	var result = [];
+
+	for (var i = 0; i < activities.length; i++) {
+		result.push(parse(activities[i]));
+	}
+
+	for (var j = 0; j < activities.length - size; j++) {
+		var index = random(iday, j) % result.length;
+		result.splice(index, 1);
+	}
+
+	return result;
+}
+
+// 解析占位符并替换成随机内容
+function parse(event) {
+	var result = {name: event.name, good: event.good, bad: event.bad};  // clone
+
+	if (result.name.indexOf('%v') != -1) {
+		result.name = result.name.replace('%v', varNames[random(iday, 12) % varNames.length]);
+	}
+
+	if (result.name.indexOf('%t') != -1) {
+		result.name = result.name.replace('%t', tools[random(iday, 11) % tools.length]);
+	}
+
+	if (result.name.indexOf('%l') != -1) {
+		result.name = result.name.replace('%l', (random(iday, 12) % 247 + 30).toString());
+	}
+
+	return result;
+}
+
+// 添加到“宜”
+function addToGood(event) {
+	$('.good .content ul').append('<li><div class="name">' + event.name + '</div><div class="description">' + event.good + '</div></li>');
+}
+
+// 添加到“不宜”
+function addToBad(event) {
+	$('.bad .content ul').append('<li><div class="name">' + event.name + '</div><div class="description">' + event.bad + '</div></li>');
+}
+
+$(function(){
+	$('.date').html(getTodayString());
+	$('.direction_value').html(directions[random(iday, 2) % directions.length]);
+	$('.ojs_value').html(ojs[random(iday, 2) % ojs.length]);
+	$('.prob_value').html(prob[random(iday, 2) % prob.length]);
+	pickTodaysLuck();
+});
+$(function() {
+  $(".dp").datepicker({ changeMonth: true, changeYear: true, dateFormat:"yy年mm月dd日" });
+});
+function dayselectd (){
+	today = strToDate($(".dp").value);
+	iday = today.getFullYear() * 10000 + (today.getMonth() + 1) * 100 + today.getDate();
+		$('.date').html(today.getFullYear() + "年" + (today.getMonth() + 1) + "月" + today.getDate() + "日 星期" + weeks[today.getDay()]);
+		$('.direction_value').html(directions[random(iday, 2) % directions.length]);
+	$('.ojs_value').html(ojs[random(iday, 2) % ojs.length]);
+	$('.prob_value').html(prob[random(iday, 2) % prob.length]);
+	pickTodaysLuck();
+}
+var meny = Meny.create({
+				menuElement: document.querySelector( '.meny' ),
+
+				contentsElement: document.querySelector( '.contents' ),
+
+				position: Meny.getQuery().p || 'left',
+
+				height: 200,
+
+				width: 320,
+
+				threshold: 40
+			});
+
+			if( Meny.getQuery().u && Meny.getQuery().u.match( /^http/gi ) ) {
+				var contents = document.querySelector( '.contents' );
+				contents.style.padding = '0px';
+				contents.innerHTML = '<div class="cover"></div><iframe src="'+ Meny.getQuery().u +'" style="width: 100%; height: 100%; border: 0; position: absolute;"></iframe>';
+			}</script>
+	 <!-- Generated by RunJS (Sun Apr 15 23:51:15 CST 2018) 1ms -->
+</body></html>
